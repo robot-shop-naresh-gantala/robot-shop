@@ -2,8 +2,6 @@
 # Build
 FROM maven:3.8-openjdk-8 AS build
 
-RUN apt-get update && apt-get -y install maven
-
 WORKDIR /opt/shipping
 
 COPY pom.xml /opt/shipping/
