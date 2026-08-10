@@ -1,7 +1,6 @@
 #
 # Build
-#
-FROM debian:10 AS build
+FROM maven:3.8-openjdk-8 AS build
 
 RUN apt-get update && apt-get -y install maven
 
